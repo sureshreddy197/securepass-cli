@@ -1,18 +1,29 @@
-# SecurePass CLI
+# SecurePass CLI 🔐
 
-A modular Python command-line password generator with strength analysis, file export, and test coverage.
+A modular **Python command-line password generator and manager**
+designed to generate strong passwords, analyze password strength, and
+store generated passwords securely.
 
-## Features
+This project demonstrates **clean architecture, modular Python design,
+CLI tools, logging, and unit testing**, making it a great portfolio
+project for Python developers.
 
-- Generate one or many passwords at once
-- Choose uppercase, lowercase, numbers, and symbols
-- Option to force at least one character from each selected type
-- Password strength evaluation
-- Save generated passwords to a timestamped text file
-- Clean multi-file project structure
-- Unit tests included
+------------------------------------------------------------------------
 
-## Project Structure
+## 🚀 Features
+
+-   Generate **secure random passwords**
+-   Password **strength evaluation**
+-   CLI-based interaction
+-   Modular Python project structure
+-   Save generated passwords to file
+-   Configurable password rules
+-   Logging system for activity tracking
+-   Unit testing support
+
+------------------------------------------------------------------------
+
+## 📁 Project Structure
 
 ```text
 securepass-cli/
@@ -33,77 +44,126 @@ securepass-cli/
 └── requirements.txt
 ```
 
-## Why this project is good for GitHub
+------------------------------------------------------------------------
 
-This project looks better than a basic one-file password generator because it has:
+## ⚙️ Requirements
 
-- modular code
-- input validation
-- reusable functions
-- tests
-- file export
-- cleaner architecture
+-   Python **3.9+**
+-   pip
 
-It is still beginner-friendly, but it feels more like a real project.
+------------------------------------------------------------------------
 
-## How to Run
+## 📥 Installation
 
-### 1. Clone the repository
+Clone the repository:
 
-```bash
-git clone https://github.com/sureshreddy197/securepass-cli.git
-cd securepass-cli
-```
+    git clone https://github.com/sureshreddy197/securepass-cli.git
 
-### 2. Run the app
+Move into the project directory:
 
-```bash
-python main.py
-```
+    cd securepass-cli
 
-## Example Usage
+(Optional) Create virtual environment:
 
-```text
-======================
-SecurePass CLI v1.0.0
-======================
-Generate secure passwords with custom rules.
-Allowed password length: 8 to 128
+    python -m venv venv
 
-Password Settings
------------------
-Enter password length: 14
-How many passwords do you want to generate: 3
-Include uppercase letters (y/n): y
-Include lowercase letters (y/n): y
-Include numbers (y/n): y
-Include symbols (y/n): y
-Force at least one character from each selected type (y/n): y
+Activate environment.
 
-Generated Passwords
--------------------
-1. T4@kLm8!zP2$qR
-   Strength: Strong (score: 6/6)
-2. pA7#xN4@qZ2!sW
-   Strength: Strong (score: 6/6)
-3. M8!vY2@rLp5#Qx
-   Strength: Strong (score: 6/6)
-```
+Linux / Mac:
 
-## Running Tests
+    source venv/bin/activate
 
-```bash
-python -m unittest discover -s tests
-```
+Windows:
 
-## Future Improvements
+    venv\Scripts\activate
 
-- Add a GUI using Tkinter or CustomTkinter
-- Add clipboard copy support
-- Add password history encryption
-- Package it as a pip-installable CLI tool
-- Add colorized terminal output
+Install dependencies:
 
-## Security Note
+    pip install -r requirements.txt
 
-This project uses Python's `secrets` module instead of `random` for better password generation security.
+------------------------------------------------------------------------
+
+## ▶️ Running the Application
+
+Run the CLI tool:
+
+    python main.py
+
+------------------------------------------------------------------------
+
+## 💻 Example Usage
+
+Generate a password:
+
+    python main.py generate --length 16
+
+Example output:
+
+    Generated Password: G8!kL2@pR9#tQ4v
+    Strength: Strong
+
+------------------------------------------------------------------------
+
+## 🧪 Running Tests
+
+Run unit tests:
+
+    pytest
+
+Run tests with coverage:
+
+    pytest --cov
+
+------------------------------------------------------------------------
+
+## 🔐 Security
+
+The password generator follows secure practices:
+
+-   Secure random password generation
+-   Optional symbol and digit support
+-   Password strength evaluation
+-   File-based password storage
+
+------------------------------------------------------------------------
+
+## 📚 Technologies Used
+
+-   Python
+-   CLI programming
+-   File handling
+-   Logging
+-   Unit testing
+-   Modular architecture
+
+------------------------------------------------------------------------
+
+## 🚧 Future Improvements
+
+Possible improvements for this project:
+
+-   GUI version using Tkinter
+-   Clipboard copy functionality
+-   Password encryption
+-   Configuration file support
+-   Docker container support
+-   API integration
+
+------------------------------------------------------------------------
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+Steps to contribute:
+
+1.  Fork the repository
+2.  Create a feature branch
+3.  Commit your changes
+4.  Submit a pull request
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is licensed under the MIT License.
