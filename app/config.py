@@ -1,0 +1,8 @@
+DEFAULT_MIN_LENGTH = 8
+DEFAULT_MAX_LENGTH = 128
+DEFAULT_GENERATE_COUNT = 1
+
+SYMBOLS = "!@#$%^&*()-_=+[]{};:,.?/|~"
+
+APP_NAME = "SecurePass CLI"
+VERSION = "1.0.0"
